@@ -1,14 +1,15 @@
 /* General Styles */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f0f0f5;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    background-color: #f7f9fc;
     color: #333;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -20,18 +21,20 @@ body {
 /* Header */
 .header {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .header img {
-    width: 120px;
+    width: 100px;
     margin-bottom: 10px;
+    border-radius: 50%;
 }
 
 .header h1 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
-    color: #007aff;
+    color: #ff4081;
 }
 
 /* Form */
@@ -43,16 +46,27 @@ form {
 
 form .question {
     width: 100%;
-    background-color: #f9f9fb;
+    background-color: #e3f2fd;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
     text-align: left;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #ff4081;
+    position: relative;
+}
+
+form .question:before {
+    content: "❓";
+    font-size: 24px;
+    position: absolute;
+    left: -25px;
+    top: 10px;
+    color: #ff4081;
 }
 
 form .question h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -74,18 +88,24 @@ form input[type="radio"] {
 }
 
 button {
-    background-color: #007aff;
+    background-color: #ff4081;
     color: white;
     padding: 12px 24px;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d81b60;
+    transform: scale(1);
 }
 
 /* Result Section */
@@ -95,10 +115,10 @@ button:hover {
 }
 
 #result h2 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 700;
     margin-bottom: 20px;
-    color: #007aff;
+    color: #ff4081;
 }
 
 #pdf-viewer iframe {
