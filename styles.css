@@ -1,55 +1,54 @@
 /* General Styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f5f5f7;
-    color: #1d1d1f;
+    background-color: #f0f0f5;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    text-align: center;
 }
 
 /* Header */
 .header {
-    text-align: center;
-    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .header img {
-    width: 150px;
+    width: 120px;
+    margin-bottom: 10px;
 }
 
 .header h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 0;
+    color: #007aff;
 }
 
 /* Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-form label {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-form input[type="radio"] {
-    margin-right: 10px;
+    align-items: center;
 }
 
 form .question {
-    margin-bottom: 20px;
+    width: 100%;
+    background-color: #f9f9fb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 form .question h3 {
@@ -58,18 +57,29 @@ form .question h3 {
     margin-bottom: 10px;
 }
 
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
 /* Buttons */
 .button-container {
-    text-align: center;
+    margin-top: 20px;
 }
 
 button {
     background-color: #007aff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -82,13 +92,13 @@ button:hover {
 #result {
     display: none;
     padding: 20px;
-    text-align: center;
 }
 
 #result h2 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #007aff;
 }
 
 #pdf-viewer iframe {
@@ -96,13 +106,12 @@ button:hover {
     height: 500px;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 .footer {
-    text-align: center;
-    padding: 10px 0;
+    margin-top: 20px;
     font-size: 14px;
-    color: #6e6e73;
+    color: #777;
 }
